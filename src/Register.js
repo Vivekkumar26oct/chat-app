@@ -25,7 +25,7 @@ function Register() {
 
         await axios.post(
 
-          "http://localhost:5000/api/auth/register",
+          "https://chat-app-backend-i1z3.onrender.com/api/auth/register",
 
           {
             name,

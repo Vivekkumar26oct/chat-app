@@ -8,7 +8,7 @@ import axios from "axios";
 import io from "socket.io-client";
 
 const socket =
-  io("http://localhost:5000");
+  io("https://chat-app-backend-i1z3.onrender.com");
 
 
 function ChatBot() {
@@ -41,7 +41,7 @@ function ChatBot() {
 
         const response =
           await axios.get(
-            "http://localhost:5000/messages"
+            "https://chat-app-backend-i1z3.onrender.com/messages"
           );
 
         setChat(response.data);
@@ -110,7 +110,7 @@ function ChatBot() {
         const response =
           await axios.post(
 
-          "http://localhost:5000/chat",
+          "https://chat-app-backend-i1z3.onrender.com/chat",
 
           {
             message,
